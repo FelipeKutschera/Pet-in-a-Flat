@@ -1,0 +1,352 @@
+main {
+  max-width: 1280px;
+  margin: auto;
+}
+
+#profile,
+#about-me {
+  margin: 90px 0;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  background-color: var(--azul-escuro);
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#profile-wrapper {
+  display: flex;
+  gap: 10%;
+}
+
+#profile-picture {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+#delete-profile-pic {
+  display: none;
+  position: absolute;
+  top: -1rem;
+  left: 6.75rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+}
+
+#profile-pic {
+  width: 128px;
+  margin-bottom: 20px;
+}
+
+#profile-picture button {
+  width: 128px;
+  height: 50px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: var(--branco);
+  background-color: var(--preto);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btn-input-file {
+  display: none;
+}
+
+.profile-infos {
+  max-width: 285px;
+  width: 100%;
+}
+
+.profile-infos input {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.profile-infos input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 285px;
+  height: 40px;
+}
+
+.profile-infos input:focus {
+  outline: none;
+}
+
+.profile-infos select:focus {
+  outline: none;
+}
+
+.profile-infos p,
+label {
+  font-weight: bold;
+}
+
+#be-pet-sitter {
+  display: flex;
+  justify-content: start;
+  gap: 10%;
+}
+
+#pet-sitter-option {
+  display: block;
+  height: 25px;
+  width: 25px;
+}
+
+#about-me-wrapper {
+  display: flex;
+  gap: 10%;
+  justify-content: center;
+  align-items: start;
+}
+
+.about-me-infos {
+  max-width: 500px;
+  width: 100%;
+}
+
+.about-me-infos label {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.about-me-infos textarea {
+  display: block;
+  width: 100%;
+  height: 495px;
+  padding: 15px;
+  resize: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  margin-bottom: 50px;
+}
+
+.about-me-infos textarea:focus,
+.about-me-infos input:focus {
+  outline: none;
+}
+
+.about-me-infos h3 {
+  margin-bottom: 20px;
+}
+
+.input-social-media {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.social-media-wrapper {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.social-media-logo {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+}
+
+#pricing {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+#one-visit,
+#two-visits {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+.price-label,
+.price-field,
+#years-label,
+#years-field {
+  display: block;
+}
+
+.price-field {
+  width: 80%;
+  height: 40px;
+}
+
+#years-of-experience {
+  margin-bottom: 40px;
+}
+
+#years-field {
+  width: 40%;
+  height: 40px;
+}
+
+#services,
+#pet-type {
+  width: 100%;
+  padding: 30px 30px 10px 30px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  background-color: var(--azul-claro);
+  margin-bottom: 50px;
+}
+
+.pet-option,
+.service-option {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+#services p,
+#pet-type p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+#services input[type="checkbox"],
+#pet-type input[type="checkbox"] {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+#pet-type span > img,
+#services span > img {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+#services span > img,
+#pet-type span > img {
+  margin-right: 30px;
+}
+
+#btn-area {
+  padding-right: 40px;
+  display: flex;
+  justify-content: end;
+  gap: 5%;
+}
+
+input {
+  padding: 15px;
+}
+
+input[type="button"] {
+  display: block;
+  width: 120px;
+  height: 50px;
+  padding: 0;
+  font-size: 20px;
+  border-radius: 5px;
+  color: var(--branco);
+  cursor: pointer;
+  background-color: var(--preto);
+}
+
+#btn-cancel,
+#btn-confirm,
+#btn-picture {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .links-container > a {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .icon-profile {
+    margin-left: 0;
+  }
+
+  #profile-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #profile-picture {
+    align-items: center;
+  }
+
+  .profile-infos {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .profile-infos input[type="text"],
+  .profile-infos input[type="email"],
+  .profile-infos input[type="tel"],
+  .profile-infos select {
+    width: 100%;
+  }
+
+  #about-me-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-me-infos {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .about-me-infos textarea {
+    height: 200px;
+  }
+
+  .social-media-logo {
+    top: 5px;
+    right: 30px;
+  }
+
+  #pricing {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #one-visit,
+  #two-visits {
+    width: 100%;
+  }
+
+  #years-field {
+    width: 100%;
+  }
+
+  #services,
+  #pet-type {
+    padding: 20px;
+  }
+}

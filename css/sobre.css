@@ -1,0 +1,41 @@
+body {
+  color: var(--preto);
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+}
+
+main > div.container {
+  margin: 2.5rem auto 5.6rem auto;
+}
+
+h1,
+h2 {
+  color: var(--roxo-escuro);
+}
+
+h1 {
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1.3em;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+}

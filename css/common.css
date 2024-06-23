@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@200;300;400;800;900&display=swap");
+
+:root {
+  --azul-escuro: #7dbcc8;
+  --azul-claro: #b9eaf5;
+  --roxo-escuro: #6f4f8b;
+  --roxo-claro: #6d739d;
+  --branco: #fafafa;
+  --preto: #1e1e1e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  background-color: var(--branco);
+}
+
+header,
+footer {
+  background-color: var(--roxo-claro);
+  height: 150px;
+}
+
+header {
+  align-content: center;
+}
+
+header nav {
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+nav > a > img {
+  display: block;
+  height: 130px;
+  width: 130px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
+}
+
+.links-container {
+  display: inline;
+}
+
+.links-container > a {
+  margin-left: 35px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--branco);
+  text-decoration: none;
+}
+
+.icon-profile {
+  height: 3.5rem;
+  width: 3.5rem;
+  position: relative;
+  display: block;
+  margin-left: 35px;
+}
+
+#btn-dropdown,
+#btn-dropdown > img {
+  height: 100%;
+  width: 100%;
+}
+
+#btn-dropdown {
+  border: none;
+  background-color: transparent;
+}
+
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.show-content {
+  display: flex;
+}
+
+#dropdown > a {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--branco);
+  text-decoration: none;
+}
+
+.footer-wrapper {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-wrapper > p {
+  padding-top: 100px;
+  font-size: 14px;
+  color: var(--branco);
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-social h3 {
+  margin: 50px 0 15px 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--branco);
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-links img {
+  width: 30px;
+  height: 30px;
+}

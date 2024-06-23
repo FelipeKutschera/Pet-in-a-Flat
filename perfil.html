@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <title>Perfil</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/perfil.css" />
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/lib/bootstrap-datepicker.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a href="index.html">
+          <img src="images/logoheader.png" alt="Logo" />
+        </a>
+        <div class="header-links">
+          <div class="links-container">
+            <a href="index.html" target="_self">Home</a>
+          </div>
+          <div class="links-container">
+            <a href="buscar.html" target="_self">Busca</a>
+          </div>
+          <div id="register-container" class="links-container">
+            <a id="register-link" href="cadastro.html" target="_self"
+              >Cadastro</a
+            >
+          </div>
+          <div id="login-container" class="links-container">
+            <a id="login-link" href="login.html" target="_self">Login</a>
+          </div>
+          <div class="links-container">
+            <a href="sobre.html" target="_self">Sobre</a>
+          </div>
+          <div class="icon-profile">
+            <button id="btn-dropdown">
+              <img id="header-profile-pic" src="" alt="Foto do perfil" />
+            </button>
+            <div id="dropdown" class="dropdown-content">
+              <a href="perfil.html">Perfil</a>
+              <a id="logout" href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="header-perfil">
+        <div class="header-perfil-wrapper">
+          <img id="profile-picture" src="" alt="Foto de Perfil" />
+          <h1 id="name"></h1>
+          <button id="btn-top" type="button"></button>
+          <img
+            id="favorite-icon"
+            src="images/iconefavoritopreto.png"
+            alt="Favoritar"
+          />
+        </div>
+      </section>
+
+      <section class="main-content">
+        <div class="about-me">
+          <h2>Sobre mim</h2>
+          <p id="about-me"></p>
+          <button id="btn-bottom" type="button"></button>
+          <div>
+            <a href="#" id="logo-instagram">
+              <img src="images/logoinstagram-roxo.png" alt="Logo Instagram" />
+            </a>
+            <a href="#" id="logo-facebook">
+              <img src="images/logofacebook-roxo.png" alt="Logo Facebook" />
+            </a>
+            <a href="#" id="logo-twitter">
+              <img src="images/logox-roxo.png" alt="Logo X" />
+            </a>
+          </div>
+        </div>
+        <div class="user-infos">
+          <div class="skills">
+            <p><span id="exp"></span> Anos de experiência</p>
+            <p id="had-pet">
+              <span class="icon-skills"
+                ><img
+                  src="images/iconetempet.png"
+                  alt="Ícone tem/teve pet" /></span
+              >Tem/teve algum pet
+            </p>
+            <p id="adm-medicines">
+              <span class="icon-skills"
+                ><img
+                  src="images/iconeremedios.png"
+                  alt="Ícone medicamentos" /></span
+              >Administra medicamentos
+            </p>
+            <p id="apl-shot">
+              <span class="icon-skills"
+                ><img
+                  src="images/iconeinjecao.png"
+                  alt="Ícone injeções" /></span
+              >Aplica injeções
+            </p>
+            <p>
+              <span class="icon-skills"
+                ><img src="images/iconegps.png" alt="Ícone GPS"
+              /></span>
+              <span id="radius-service"></span> km de deslocamento
+            </p>
+            <p>
+              <span class="icon-skills"
+                ><img
+                  src="images/iconelocalizacao.png"
+                  alt="Ícone localização"
+                />
+              </span>
+              <span id="neighborhood"></span>
+            </p>
+          </div>
+          <div class="calendar-wrapper">
+            <div class="calendar"></div>
+            <div class="calendar-labels">
+              <div>
+                <div id="available"></div>
+                <p>Disponível</p>
+              </div>
+              <div>
+                <div id="unavailable"></div>
+                <p>Indisponível</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-wrapper">
+        <p>© Copyright 2024 Pet in a Flat</p>
+        <div class="footer-social">
+          <h3>Siga nossa redes sociais</h3>
+          <div class="footer-links">
+            <a href="#">
+              <img src="images/facebook.png" alt="Logo Facebook" />
+            </a>
+            <a href="#">
+              <img src="images/instagram.png" alt="Logo Instagram" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/lib/jquery-3.7.1.js"></script>
+    <script src="js/lib/bootstrap-datepicker.min.js"></script>
+    <script src="js/lib/bootstrap-datepicker.pt-BR.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/perfil.js"></script>
+  </body>
+</html>
